@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.pin.eshop.model.Product;
 
-public class ProductRepository extends MongoRepository<Product, String> {
+public interface ProductRepository extends MongoRepository<Product, String> {
     public List<Product> findByTitle(String title);
 }

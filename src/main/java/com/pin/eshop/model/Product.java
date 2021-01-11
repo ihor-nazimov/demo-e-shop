@@ -28,6 +28,13 @@ public class Product {
         this.imageUri = imageUri;
     }
 
+    public Product updateNotNulls(Product product) {
+        if (product.title != null) this.title = product.title;
+        if (product.description != null) this.description = product.description;
+        if (product.imageUri != null) this.imageUri = product.imageUri;
+        return this;
+    }
+
     public String getId() {
         return id;
     }
@@ -65,4 +72,5 @@ public class Product {
                 ", imageUri='" + imageUri + '\'' +
                 '}';
     }
+
 }
