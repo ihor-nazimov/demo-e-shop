@@ -11,6 +11,7 @@ public class Product {
     private String title;
     private String description;
     private String imageUri;
+    private Number price;
 
     public Product() {
 
@@ -20,6 +21,7 @@ public class Product {
         this.title = product.title;
         this.description = product.description;
         this.imageUri = product.imageUri;
+        this.price = product.price;
     }
 
     public Product(String title, String description, String imageUri) {
@@ -32,6 +34,7 @@ public class Product {
         if (product.title != null) this.title = product.title;
         if (product.description != null) this.description = product.description;
         if (product.imageUri != null) this.imageUri = product.imageUri;
+        if (product.price != null) this.price = product.price;
         return this;
     }
 
@@ -63,6 +66,14 @@ public class Product {
         this.imageUri = imageUri;
     }
 
+    public Number getPrice() {
+        return price;
+    }
+
+    public void setPrice(Number price) {
+        this.price = price;
+    }
+
     @java.lang.Override
     public java.lang.String toString() {
         return "Product{" +
@@ -70,6 +81,7 @@ public class Product {
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", imageUri='" + imageUri + '\'' +
+                ", price='" + price + '\'' +
                 '}';
     }
 
