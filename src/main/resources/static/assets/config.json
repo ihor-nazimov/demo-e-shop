@@ -1,0 +1,4 @@
+{
+    "apiServer": "http://kpi4eshop.eu-central-1.elasticbeanstalk.com/api",
+    "imageServer": "http://kpi4eshop.eu-central-1.elasticbeanstalk.com"
+}
